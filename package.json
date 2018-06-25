@@ -1,0 +1,27 @@
+{
+  "name": "@dpack/storage",
+  "version": "0.1.1",
+  "description": "dPack Storage Provider For Distributed Drives (dDrives)",
+  "contributors": [
+    "Jared Rice Sr. <jared@dwebs.io>",
+    "Distributed Webs Project, LLC. <labs@distributedwebs.org>"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "dependencies": {
+    "@ddrive/core": "ddrives/core#master",
+    "@dpack/secret-storage": "dpacks/secret-storage#master",
+    "@dwcore/ref": "dwcore/ref#master",
+    "append-tree": "^2.0.5",
+    "multi-random-access": "^2.0.3"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
