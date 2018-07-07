@@ -1,7 +1,7 @@
 var ddrive = require('@ddrive/core')
 var storage = require('./')
 
-var vault = ddrive(storage('sandbox/my-dataset'), {latest: true})
+var vault = ddrive(storage('./my-dataset'), {latest: true})
 
 vault.writeFile('/foo', 'this is foo')
 vault.writeFile('/bar', 'this is bar')
@@ -12,7 +12,7 @@ vault.writeFile('/baz', 'this is baz', function () {
     console.log(buf)
   })
 
-  var fork = ddrive(storage('sandbox/my-dataset-fork'), vault.key, {thin: true})
+  var fork = ddrive(storage('./my-dataset-fork'), vault.key, {sparse: true})
   var stream = vault.replicate()
 
   stream.pipe(fork.replicate()).pipe(stream)

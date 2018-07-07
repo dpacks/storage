@@ -1,4 +1,4 @@
-var raf = require('@dwcore/ref')
+var raf = require('random-access-file')
 var secretStorage = require('@dpack/secret-storage')
 var multi = require('multi-random-access')
 var messages = require('append-tree/messages')
