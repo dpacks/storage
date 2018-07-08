@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@ddrive/core": "ddrives/core#master",
-    "@dpack/secret-storage": "^0.0.3",
+    "@dpack/secret-storage": "~0.1.3",
     "append-tree": "^2.0.5",
     "multi-random-access": "^2.0.3",
     "random-access-file": "^2.0.1"
