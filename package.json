@@ -1,6 +1,6 @@
 {
   "name": "@dpack/storage",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "dPack Storage Provider For Distributed Drives (dDrives)",
   "contributors": [
     "Jared Rice Sr. <jared@dwebs.io>",
