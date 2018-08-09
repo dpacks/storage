@@ -7,7 +7,7 @@ var path = require('path')
 
 module.exports = function (dir, opts) {
   if (!opts) opts = {}
-  var prefix = opts.prefix || '.dpack/'
+  var prefix = opts.prefix || '.dweb/'
   return {
     metadata: function (name, opts) {
       if (typeof dir === 'function') return dir(prefix + 'metadata.' + name)
